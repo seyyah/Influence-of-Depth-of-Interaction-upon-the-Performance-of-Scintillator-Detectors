@@ -2,6 +2,7 @@ Link.tex
 abstract.tex
 introduction.tex
 figures/DOI-CTR/DOI-CTR.png
+figures/admin/admin.jpg
 Method.tex
 optimumparamtable.tex
 Method 2.tex
