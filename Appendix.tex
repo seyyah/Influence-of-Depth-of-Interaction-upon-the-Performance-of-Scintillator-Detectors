@@ -1,0 +1,40 @@
+\section*{Appendix}
+\subsection{Analysis of Data}
+For each measurement, data was taken from the oscilloscope and stored in raw text (csv) files labelled with the varied parameter and scintillator crystal used in a A vs B fashion. Each measurement produced 7 datafiles, corresponding to different recorded information from the programmed oscilloscope. These are :
+\begin{enumerate}
+\item Maximum energy per event of the left scintillator detector
+\item Maximum energy per event of the right scintillator detector
+\item The relative arrival time between coincidence events
+\item (Not used) Width of left NINO signal
+\item (Not used) Width of right NINO signal
+\item (Not used)
+\item The number of events per period in the left scintillator detector
+\item The number of events per period in the right scintillator detector
+\end{enumerate}
+Where files 1 and 2 are the maximum energy per event, files 7,8 are the events per period and file 3 is the relative arrival time. The remaining two files correspond to the widths of the NINO signals. These are not used.
+
+To reach the processed data attached to this research paper, the following tasks were performed upon the raw data.
+
+\begin{enumerate}
+\item Load grouped data into memory
+\item Searches for and fits to Gaussian peaks in energy data
+\item Searches for events which record only two gamma ray photons
+\item Select events matching photopeak and two event criteria
+\item Use above to select for true gamma-gamma events only
+\item Fit to delay peak. Determine error in fit using BCA bootstrap.
+\item Return results
+\end{enumerate}
+
+\subsection{Data, Tables and Images}
+All processed data can be found \href{https://github.com/marksbrown/doipaper/tree/master/processeddata}{here} for each set of parameter - scintillator crystals, configurations and shapes are combined and plotted \& tabulated in the following notebooks :
+\begin{itemize}
+\item \href{http://nbviewer.ipython.org/github/marksbrown/doipaper/blob/master/notebooks/Generate\%20Images.ipynb}{Generated Images}
+\item \href{http://nbviewer.ipython.org/github/marksbrown/doipaper/blob/master/notebooks/Generate\%20Tables.ipynb}{Generated Tables}
+\end{itemize}
+Results not presented in the paper, which may prove useful are available :
+\begin{itemize}
+\item \href{http://nbviewer.ipython.org/github/marksbrown/doipaper/blob/master/notebooks/Generate\%20Additional\%20Images.ipynb}{Generated Additional Images}
+\item \href{http://nbviewer.ipython.org/github/marksbrown/doipaper/blob/master/notebooks/Generate\%20Additional\%20Tables.ipynb}{Generated Additional Tables}
+\end{itemize}
+
+The raw data, along with notebooks showing the fits and parameters of every measurement taken can be found at \href{http://www.ee.ucl.ac.uk/~mbrown/}{http://www.ee.ucl.ac.uk/~mbrown/}.
